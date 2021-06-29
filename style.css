@@ -1,39 +1,43 @@
-.box{
-  width: 100px;
-  height:100px;
-  background: red;
-  position: relative;
-  animation-name: shadid;
-  animation-duration: 5s;
-  animation-delay: :2s;
-  animation-iteration-count: 2;
+ul {
+    margin: 0;
+    padding: 0;
+    background: #333;
+    overflow: hidden;
 }
 
-@keyframes shadid {
-  0% {
-    background-color: orange;
-    top:0;
-    left:0;
-  }
-  25%{
-    background-color: yellow;
-    top:0;
-    left:200px;
+ul li {
 
-  }
-  50%{
-    background-color: green;
-    top:200px;
-    left:200px;
-  }
-  75%{
-    background-color: lime;
-    top:200px;
-    left:0;
-  }
-  100%{
-    background-color: black
-    top:0;
-    left:0;
-  }
+    float: left;
+    list-style-type: none;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+ul li a:hover {
+    background: grey;
+}
+
+.dropdown-content {
+    background: #f9f9f9;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
